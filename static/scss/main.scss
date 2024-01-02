@@ -8,7 +8,7 @@ body, html {
   }
 body
 {
-    background-color:rgb(7, 6, 6);
+    background-color:black;
     height:200px;
     background: $gradient; /* Gradient colors and direction */
 }
@@ -17,26 +17,32 @@ body
 {
     font-size: $title-font-size;
     font-family: 'Open Sans', sans-serif;
-    display: flex;
     color:white;
     padding-left:10vw;
     padding-right:45vw;
     padding-top:20vw;
     background: $gradient; /* Gradient colors and direction */
-
-
+    margin:0px;
 }
 .text-body
 {
     @extend .text-title;
     font-size:$body-font-size;
-    padding-top:0.1vw;
-    margin-top:0.1vw;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 .text-small
 {
     font-size:$small-font-size;
     color:white;
     position:fixed;
-    bottom:0;
+    bottom:0px;
+}
+
+.photo
+{
+    float:right;
+    max-width: 100%; // Ensure the image doesn't exceed its container width
+    display:flex;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%,black 30%, rgb(0, 0, 0) 100%);
 }

@@ -3,6 +3,7 @@
   border-radius: 5px;
   border-style: solid;
   margin-left: 10vw;
+  padding-top: 5px;
   font-size: 19px;
   font-family: "Open Sans", sans-serif;
 }
@@ -20,7 +21,7 @@ body, html {
 }
 
 body {
-  background-color: rgb(7, 6, 6);
+  background-color: black;
   height: 200px;
   background: linear-gradient(to right, #000000, rgb(39, 39, 39), #787878); /* Gradient colors and direction */
 }
@@ -28,23 +29,31 @@ body {
 .text-title, .text-body {
   font-size: 40px;
   font-family: "Open Sans", sans-serif;
-  display: flex;
   color: white;
   padding-left: 10vw;
   padding-right: 45vw;
   padding-top: 20vw;
   background: linear-gradient(to right, #000000, rgb(39, 39, 39), #787878); /* Gradient colors and direction */
+  margin: 0px;
 }
 
 .text-body {
   font-size: 19px;
-  padding-top: 0.1vw;
-  margin-top: 0.1vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .text-small {
   font-size: 10px;
   color: white;
   position: fixed;
-  bottom: 0;
+  bottom: 0px;
+}
+
+.photo {
+  float: right;
+  max-width: 100%;
+  display: flex;
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, black 30%, rgb(0, 0, 0) 100%);
+          mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, black 30%, rgb(0, 0, 0) 100%);
 }/*# sourceMappingURL=main.css.map */
