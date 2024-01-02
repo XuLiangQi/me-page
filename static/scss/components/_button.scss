@@ -1,0 +1,15 @@
+@import '../_variables.scss';
+.button
+{
+    background-color: rgb(178, 178, 178);
+    border-radius:5px;
+    border-style: solid;
+    margin-left: 10vw;
+    font-size:$body-font-size;
+    font-family: 'Open Sans', sans-serif;
+    &:hover {
+        color:white;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        transition:background-color 0.2s, color 0.2s;
+    }
+}

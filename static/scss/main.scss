@@ -1,0 +1,42 @@
+@import './components/_button.scss', '_variables.scss';
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* Set the width of the page */
+    height: 200px; /* Set the height of the page */
+  }
+body
+{
+    background-color:rgb(7, 6, 6);
+    height:200px;
+    background: $gradient; /* Gradient colors and direction */
+}
+
+.text-title
+{
+    font-size: $title-font-size;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    color:white;
+    padding-left:10vw;
+    padding-right:45vw;
+    padding-top:20vw;
+    background: $gradient; /* Gradient colors and direction */
+
+
+}
+.text-body
+{
+    @extend .text-title;
+    font-size:$body-font-size;
+    padding-top:0.1vw;
+    margin-top:0.1vw;
+}
+.text-small
+{
+    font-size:$small-font-size;
+    color:white;
+    position:fixed;
+    bottom:0;
+}
