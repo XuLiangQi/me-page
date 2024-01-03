@@ -15,8 +15,7 @@
     height:50px;
     padding-left:20px;
     padding-top:10px;
-    &:hover
-    {
+    &:hover{
         transform: scale(1.05);
     }
 }
@@ -27,6 +26,10 @@
     display:inline-block;
     position:fixed;
     top: 30px;  
+    &:hover{
+        transform: scale(1.05);
+        color:rgb(247, 209, 153);
+    }
 }
 .menu-about{
     @extend .menu-button;
