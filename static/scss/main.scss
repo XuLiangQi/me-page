@@ -1,48 +1,11 @@
-@import './components/_button.scss', '_variables.scss';
+@import "variables", "home", "menu";
 
-body, html {
+body, html{
+    background-color: rgb(211, 205, 194);
+    height: 100%;
+    width: 100%;
     margin: 0;
-    padding: 0;
-    width: 100vw; /* Set the width of the page */
-    height: 200px; /* Set the height of the page */
-  }
-body
-{
-    background-color:black;
-    height:200px;
-    background: $gradient; /* Gradient colors and direction */
-}
-
-.text-title
-{
-    font-size: $title-font-size;
-    font-family: 'Open Sans', sans-serif;
-    color:white;
-    padding-left:10vw;
-    padding-right:45vw;
-    padding-top:20vw;
-    background: $gradient; /* Gradient colors and direction */
-    margin:0px;
-}
-.text-body
-{
-    @extend .text-title;
-    font-size:$body-font-size;
-    padding-top:10px;
-    padding-bottom:10px;
-}
-.text-small
-{
-    font-size:$small-font-size;
-    color:white;
-    position:fixed;
-    bottom:0px;
-}
-
-.photo
-{
-    float:right;
-    max-width: 100%; // Ensure the image doesn't exceed its container width
-    display:flex;
-    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%,black 30%, rgb(0, 0, 0) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

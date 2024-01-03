@@ -1,0 +1,44 @@
+@import "variables";
+
+.menu-bar-container{
+    position:fixed;
+    height: 75px;
+    top:    10px;
+    left:   10px;;
+    right:  10px;
+    background-color:rgb(0, 0, 0);
+    border-radius: 50px;
+    z-index: 2;
+}
+
+.logo{
+    height:50px;
+    padding-left:20px;
+    padding-top:10px;
+    &:hover
+    {
+        transform: scale(1.05);
+    }
+}
+
+.menu-button{
+    color:white;
+    font-size:$font-l;
+    display:inline-block;
+    position:fixed;
+    top: 30px;  
+}
+.menu-about{
+    @extend .menu-button;
+    right: 550px;
+}
+
+.menu-project{
+    @extend .menu-button;
+    right: 350px;
+}
+
+.menu-contact{
+    @extend .menu-button;
+    right: 150px;
+}

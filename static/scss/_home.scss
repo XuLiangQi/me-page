@@ -1,0 +1,22 @@
+.home-intro-container{
+    display:grid;
+    width: 500px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    text-align: left; /* Center text horizontally */
+    margin-right: 600px; /* Adjust the left margin */
+    margin-bottom:300px;
+}
+.home-title{
+    margin-top:150px;
+    margin-right:100px;
+    font-size:$font-xl;
+}
+.home-paragraph{
+    font-size:$font-m;
+}
+.casual-photo{
+    position:absolute;
+    margin-left: 600px;
+    margin-bottom:300px;
+    width:400px;
+}
