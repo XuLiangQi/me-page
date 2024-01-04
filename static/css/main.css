@@ -50,10 +50,27 @@
   display: inline-block;
   position: fixed;
   top: 30px;
+  margin: 0 40px;
+  text-decoration: none;
 }
-.menu-button:hover, .menu-contact:hover, .menu-project:hover, .menu-about:hover {
-  transform: scale(1.05);
-  color: rgb(247, 209, 153);
+.menu-button svg, .menu-contact svg, .menu-project svg, .menu-about svg {
+  position: absolute;
+  left: 0;
+  top: -50%;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  pointer-events: none;
+}
+.menu-button path, .menu-contact path, .menu-project path, .menu-about path {
+  transition: stroke-dashoffset 300ms linear;
+  stroke-width: 2;
+  stroke: white;
+  fill: none;
+  stroke-linecap: round;
+}
+.menu-button:hover path, .menu-contact:hover path, .menu-project:hover path, .menu-about:hover path {
+  stroke-dashoffset: 0;
 }
 
 .menu-about {
@@ -66,6 +83,33 @@
 
 .menu-contact {
   right: 150px;
+}
+
+/* Marker styling */
+.marker {
+  position: relative;
+  margin: 0 40px;
+  color: #333;
+  text-decoration: none;
+}
+.marker svg {
+  position: absolute;
+  left: 0;
+  top: -50%;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  pointer-events: none;
+}
+.marker path {
+  transition: stroke-dashoffset 300ms linear;
+  stroke-width: 1;
+  stroke: darkgreen;
+  fill: none;
+  stroke-linecap: round;
+}
+.marker:hover path {
+  stroke-dashoffset: 0;
 }
 
 body, html {

@@ -26,10 +26,28 @@
     display:inline-block;
     position:fixed;
     top: 30px;  
-    &:hover{
-        transform: scale(1.05);
-        color:rgb(247, 209, 153);
+    margin: 0 40px;
+    text-decoration: none;
+    //line-height: 1em;
+    & svg {
+      position: absolute;
+      left: 0;
+      top: -50%;
+      right: 0; 
+      margin-left: auto; 
+      margin-right: auto; 
+      pointer-events: none;   
     }
+    & path {
+        transition: stroke-dashoffset 300ms linear;
+      stroke-width: 2.0;
+      stroke: white;
+      fill: none;
+      stroke-linecap: round;
+    }
+    &:hover path{
+      stroke-dashoffset: 0;
+    } 
 }
 .menu-about{
     @extend .menu-button;
@@ -45,3 +63,32 @@
     @extend .menu-button;
     right: 150px;
 }
+
+/* Marker styling */
+.marker {
+    position: relative;
+    margin: 0 40px;
+    color: #333;
+    text-decoration: none;
+    //line-height: 1em;
+    & svg {
+      position: absolute;
+      left: 0;
+      top: -50%;
+      right: 0; 
+      margin-left: auto; 
+      margin-right: auto; 
+      pointer-events: none;   
+    }
+    & path {
+        transition: stroke-dashoffset 300ms linear;
+      stroke-width: 1.0;
+      stroke: darkgreen;
+      fill: none;
+      stroke-linecap: round;
+    }
+    &:hover path{
+      stroke-dashoffset: 0;
+    } 
+  }
+  
