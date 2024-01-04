@@ -85,33 +85,6 @@
   right: 150px;
 }
 
-/* Marker styling */
-.marker {
-  position: relative;
-  margin: 0 40px;
-  color: #333;
-  text-decoration: none;
-}
-.marker svg {
-  position: absolute;
-  left: 0;
-  top: -50%;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  pointer-events: none;
-}
-.marker path {
-  transition: stroke-dashoffset 300ms linear;
-  stroke-width: 1;
-  stroke: darkgreen;
-  fill: none;
-  stroke-linecap: round;
-}
-.marker:hover path {
-  stroke-dashoffset: 0;
-}
-
 body, html {
   background-color: rgb(211, 205, 194);
   height: 100%;
