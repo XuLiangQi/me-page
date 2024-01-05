@@ -1,0 +1,30 @@
+.info-container{
+    display:grid;
+    width: auto; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    text-align: left; /* Center text from the left */
+}
+.info-text-container{
+    margin-right:600px;
+}
+.title{
+    margin-top:150px;
+    margin-right:100px;
+    font-size:$font-xl;
+}
+
+.paragraph{
+    font-size:$font-m;
+}
+.photo{
+    position:absolute;
+    margin-left: 600px;
+    margin-bottom:300px;
+    width:400px;
+}
+.linkedin-photo{
+    @extend .photo;
+    width:300px;
+    margin-left: 300px;
+    margin-top:20px;
+}

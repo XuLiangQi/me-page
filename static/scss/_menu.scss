@@ -52,15 +52,30 @@
 }
 .menu-about{
     @extend .menu-button;
-    right: 550px;
+    right: 320px;
 }
 
 .menu-project{
     @extend .menu-button;
-    right: 350px;
+    right: 200px;
 }
 
 .menu-contact{
     @extend .menu-button;
-    right: 150px;
+    right: 80px;
+}
+
+
+.github-menu{
+    @extend .logo;
+    position:fixed;
+    top: 15px;  
+    right:35px;
+    height: 40px;
+    &:hover{
+        -webkit-transform: rotateZ(-15deg);
+        -ms-transform: rotateZ(-15deg);
+        transform: rotateZ(-15deg);
+        transition: 1s ease;
+        }
 }
