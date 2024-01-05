@@ -30,6 +30,10 @@
   width: 300px;
   margin-left: 300px;
   margin-top: 20px;
+  transition: 1s ease;
+}
+.linkedin-photo:hover {
+  transform: rotateZ(-3deg);
 }
 
 .menu-bar-container {
@@ -99,10 +103,10 @@
   top: 15px;
   right: 35px;
   height: 40px;
+  transition: 1s ease;
 }
 .github-menu:hover {
   transform: rotateZ(-15deg);
-  transition: 1s ease;
 }
 
 .contact-containter {
