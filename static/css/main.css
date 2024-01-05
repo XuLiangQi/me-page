@@ -1,6 +1,6 @@
 .home-intro-container {
   display: grid;
-  width: 500px; /* Adjust width as needed */
+  width: 300px; /* Adjust width as needed */
   height: 200px; /* Adjust height as needed */
   text-align: left; /* Center text horizontally */
   margin-right: 600px; /* Adjust the left margin */
@@ -39,9 +39,10 @@
   height: 50px;
   padding-left: 20px;
   padding-top: 10px;
+  transition: transform 0.5s ease;
 }
 .logo:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .menu-button, .menu-contact, .menu-project, .menu-about {
