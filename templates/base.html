@@ -4,34 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/main.css">
-    <title>XuLiang Qi</title>
+    <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-    <div class="menu-bar-container">
-        <a href="base.html" title="take me home">
-            <img src="../static/imgs/logo_c_inverted_no_bg.png" alt="" class="logo">
-        </a>
-
-        <div class="menu-button-container">
-            <a href="about.html" class="menu-button menu-about" target="_self">About</a>
+    <nav>
+        <div class="menu-bar-container">
+            <a href="{{ url_for('home') }}" title="take me home">
+                <img src="../static/imgs/logo_c_inverted_no_bg.png" alt="" class="logo">
+            </a>
     
-            <a href="projects.html" class="menu-button menu-project" target="_self">Projects</a>
+            <div class="menu-button-container">
+                <a href="{{ url_for('about') }}" class="menu-button menu-about" target="_self">About</a>
+        
+                <a href="{{ url_for('projects') }}" class="menu-button menu-project" target="_self">Projects</a>
+        
+                <a href="{{ url_for('contact') }}" class="menu-button menu-contact" target="_self">Contact</a>
+            </div>
     
-            <a href="contact.html" class="menu-button menu-contact" target="_self">Contact</a>
         </div>
-
-    </div>
-
-    <div class="home-intro-container">
-        <div>
-            <h1 class="home-title">Hello there!</h1>
-            <p class="home-paragraph">I'm XuLiang, a software developer, a machine learning engineer.</p>
-        </div>
-        <img src="../static/imgs/casual.jpeg" alt="" class="casual-photo">
-    </div>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../static/js/menu-hover.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../static/js/menu-hover.js"></script>
+    </nav>
+    {% block content %}{% endblock %}
 </body>
 </html>
