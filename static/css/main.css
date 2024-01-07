@@ -103,9 +103,21 @@
   transform: rotateZ(-15deg);
 }
 
-.footer {
-  position: absolute;
-  background-color: white; /* Set background color */
+.footer-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: auto auto;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  width: 100vw;
+  text-align: right;
+  bottom: 0;
+  justify-content: end;
+}
+
+.footer-img {
+  width: 45px;
+  margin-right: 30px;
 }
 
 .linkedin-photo {
