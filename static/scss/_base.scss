@@ -82,15 +82,14 @@
 }
 
 .footer-container{
-    margin-top:50px;
     display:grid;
     grid-template-columns: auto auto;
     column-gap: 15px;
     width:100vw;
     text-align: right; 
     justify-content: end;
-    position: fixed;
-    bottom:0;
+    position: absolute;
+    bottom: 0;
 }
 .footer-img{
     width:45px;
