@@ -1,0 +1,40 @@
+.project-info-container{
+    margin-top:15vh;
+    display: flex;
+    width: auto;
+    height: auto; 
+    text-align: center; 
+    font-family: 'Montserrat';
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+.project-text-container{
+    text-align: center; 
+    margin: 0 auto;
+}
+.project-title{
+    font-size:$font-xl;
+}
+
+.project-container{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 50px;
+    margin: 0 auto;
+    margin-top:100px;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+.project-card{
+    background-color:rgb(243, 238, 238);
+    border-radius: 20px;;
+    height:500px;
+    width: 350px;
+    text-align: center; 
+    transition: transform 0.5s ease; 
+    &:hover{
+        transform: scale(1.05);
+    }
+}

@@ -6,6 +6,9 @@
   width: auto;
   height: auto;
   text-align: left;
+  font-family: "Montserrat";
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
 }
 
 .info-text-container {
@@ -13,17 +16,17 @@
   margin-top: 28vh;
 }
 
-.title {
+.home-title {
   margin-top: 150px;
   margin-right: 100px;
-  font-size: 30px;
+  font-size: 40px;
 }
 
-.paragraph {
+.home-paragraph {
   font-size: 20px;
 }
 
-.home-photo, .linkedin-photo {
+.home-photo {
   position: relative;
   margin-right: 20vw;
   margin-top: 20vh;
@@ -39,6 +42,7 @@
   background-color: rgb(0, 0, 0);
   border-radius: 50px;
   z-index: 2;
+  font-family: "Tangerine";
 }
 
 .logo, .github-menu {
@@ -53,7 +57,7 @@
 
 .menu-button, .menu-contact, .menu-project, .menu-about {
   color: white;
-  font-size: 25px;
+  font-size: 35px;
   display: inline-block;
   position: fixed;
   top: 30px;
@@ -111,8 +115,9 @@
        column-gap: 15px;
   width: 100vw;
   text-align: right;
-  bottom: 0;
   justify-content: end;
+  position: fixed;
+  bottom: 0;
 }
 
 .footer-img {
@@ -120,12 +125,74 @@
   margin-right: 30px;
 }
 
-.linkedin-photo {
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.linkedin-photo-container {
+  position: relative;
+  margin-right: 20vw;
+  margin-top: 40vh;
   width: 300px;
+  height: 300px;
+  display: inline-block;
+}
+
+.linkedin-photo {
+  width: 100%;
+  height: 100%;
   transition: 1s ease;
 }
 .linkedin-photo:hover {
   transform: rotateZ(-3deg);
+}
+
+.project-info-container {
+  margin-top: 15vh;
+  display: flex;
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-family: "Montserrat";
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.project-text-container {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.project-title {
+  font-size: 40px;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  margin: 0 auto;
+  margin-top: 100px;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.project-card {
+  background-color: rgb(243, 238, 238);
+  border-radius: 20px;
+  height: 500px;
+  width: 350px;
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+.project-card:hover {
+  transform: scale(1.05);
 }
 
 body, html {

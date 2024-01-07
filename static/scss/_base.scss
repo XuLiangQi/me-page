@@ -9,6 +9,7 @@
     background-color:rgb(0, 0, 0);
     border-radius: 50px;
     z-index: 2;
+    font-family: 'Tangerine';
 }
 
 .logo{
@@ -23,7 +24,7 @@
 
 .menu-button{
     color:white;
-    font-size:$font-l;
+    font-size:35px;
     display:inline-block;
     position:fixed;
     top: 30px;  
@@ -87,10 +88,20 @@
     column-gap: 15px;
     width:100vw;
     text-align: right; 
-    bottom:0;
     justify-content: end;
+    position: fixed;
+    bottom:0;
 }
 .footer-img{
     width:45px;
     margin-right:30px;
 }
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

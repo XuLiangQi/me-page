@@ -5,18 +5,21 @@
     width: auto;
     height: auto; 
     text-align: left; 
+    font-family: 'Montserrat';
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
 }
 .info-text-container{
     margin-left:20vw;
     margin-top:28vh;
 }
-.title{
+.home-title{
     margin-top:150px;
     margin-right:100px;
     font-size:$font-xl;
 }
 
-.paragraph{
+.home-paragraph{
     font-size:$font-m;
 }
 .home-photo{

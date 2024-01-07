@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/main.css">
     <title>{% block title %}{% endblock %}</title>
+    <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
 <body>
     <nav>
@@ -14,11 +16,11 @@
             </a>
     
             <div class="menu-button-container">
-                <a href="{{ url_for('about') }}" class="menu-button menu-about" target="_self">About</a>
+                <a href="{{ url_for('about') }}" class="menu-button menu-about" target="_self"><b>About</b></a>
         
-                <a href="{{ url_for('projects') }}" class="menu-button menu-project" target="_self">Projects</a>
+                <a href="{{ url_for('projects') }}" class="menu-button menu-project" target="_self"><b>Projects</b></a>
         
-                <a href="{{ url_for('contact') }}" class="menu-button menu-contact" target="_self">Contact</a>
+                <a href="{{ url_for('contact') }}" class="menu-button menu-contact" target="_self"><b>Contact</b></a>
 
                 <a href="https://github.com/XuLiangQi" target="_blank">
                     <img src="../static/imgs/github-white.png" alt="" class="github-menu">
@@ -30,11 +32,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="../static/js/menu-hover.js"></script>
     </nav>
+
     {% block content %}{% endblock %}
 
     <footer class="footer-container">
         <p>© 2024 XuLiang Qi</p>
-        <img src="../static/imgs/footer-logo-no-bg.png" alt="Image Description" title="'Made by XuLiang Qi'" class="footer-img">
+        <img src="../static/imgs/footer-logo-no-bg.png" alt="Image Description" title="''Made by XuLiang Qi''" class="footer-img">
     </footer>
 </body>
 </html>
