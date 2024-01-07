@@ -1,12 +1,16 @@
-.info-container {
+.info-container, .contact-containter {
   display: grid;
-  width: auto; /* Adjust width as needed */
-  height: auto; /* Adjust height as needed */
-  text-align: left; /* Center text from the left */
+  grid-template-columns: auto auto;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  width: auto;
+  height: auto;
+  text-align: left;
 }
 
 .info-text-container {
-  margin-right: 600px;
+  margin-left: 20vw;
+  margin-top: 28vh;
 }
 
 .title {
@@ -19,21 +23,11 @@
   font-size: 20px;
 }
 
-.photo, .linkedin-photo {
-  position: absolute;
-  margin-left: 600px;
-  margin-bottom: 300px;
+.home-photo, .linkedin-photo {
+  position: relative;
+  margin-right: 20vw;
+  margin-top: 20vh;
   width: 400px;
-}
-
-.linkedin-photo {
-  width: 300px;
-  margin-left: 300px;
-  margin-top: 20px;
-  transition: 1s ease;
-}
-.linkedin-photo:hover {
-  transform: rotateZ(-3deg);
 }
 
 .menu-bar-container {
@@ -109,13 +103,17 @@
   transform: rotateZ(-15deg);
 }
 
-.contact-containter {
-  display: grid;
+.footer {
+  position: absolute;
+  background-color: white; /* Set background color */
+}
+
+.linkedin-photo {
   width: 300px;
-  height: 200px;
-  text-align: left;
-  margin-right: 600px;
-  margin-bottom: 300px;
+  transition: 1s ease;
+}
+.linkedin-photo:hover {
+  transform: rotateZ(-3deg);
 }
 
 body, html {
@@ -123,7 +121,4 @@ body, html {
   height: 100%;
   width: 100%;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }/*# sourceMappingURL=main.css.map */
