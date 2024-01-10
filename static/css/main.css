@@ -161,12 +161,12 @@
   animation: fadeIn 1s ease forwards;
 }
 
-.project-text-container {
+.project-main-text-container {
   text-align: center;
   margin: 0 auto;
 }
 
-.project-title {
+.project-main-title {
   font-size: 40px;
 }
 
@@ -176,11 +176,12 @@
   margin-top: 100px;
   justify-content: center;
   opacity: 0;
+  font-family: "Montserrat";
   animation: fadeIn 1s ease forwards;
 }
 
 .project-card {
-  background-color: rgb(243, 238, 238);
+  background-color: rgb(247, 241, 229);
   border-radius: 20px;
   height: 500px;
   width: 350px;
@@ -189,7 +190,44 @@
   transition: transform 0.5s ease;
 }
 .project-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
+}
+
+.project-img {
+  width: 250px;
+  border-radius: 15px;
+  padding-top: 20px;
+}
+
+.project-title {
+  padding-top: 12px;
+  font-size: 20px;
+  margin: 0;
+}
+
+.project-paragraph {
+  font-size: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.project-skill-set-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 0;
+  margin-top: 70px;
+  font-family: "Montserrat";
+  animation: fadeIn 1s ease forwards;
+}
+
+.project-skill-set {
+  background-color: rgb(46, 32, 19);
+  color: white;
+  border-radius: 15px;
+  padding: 8px;
+  margin: 5px;
+  font-size: 15px;
 }
 
 body, html {
