@@ -16,30 +16,30 @@
     <!--
         projects
     -->
-    <div class="project-card">
-        <img src="..\static\imgs\nn-project-img.jpg" alt="" class="project-img">
-        <h3 class="project-title"> Project 1</h3>
-        <p class="project-paragraph"> Some description to introduce the project. Be brief. Also attach skills sets used at the bottom</p>
-        <div class="project-skill-set-container">
-            <p class="project-skill-set">NLP</p>
-            <p class="project-skill-set">ML/DL</p>
-            <p class="project-skill-set">Python</p>
-            <p class="project-skill-set">Pytorch</p>
-        </div>
-    </div>
+    
+    <script src="../static/js/project-card.js"></script>
+    <section id="project-container">
+        <!-- Projects -->
+        <script>    
+            createProjectCard("../static/imgs/nn-project-img.jpg"
+            , "Decoder Only Transformer"
+            , "A large language model that is capable generating text"
+            , ["NLP", "ML/DL", "Python", "Pytorch"]
+            , "https://github.com/XuLiangQi/decoder-only-transformer");
 
-    <div class="project-card">
-        <p> Project 2</p>
-    </div>
+            createProjectCard("../static/imgs/website-img.png"
+            , "Personal Portfolio Website"
+            , "Porfolio website to display personal informaiton and projects."
+            , ["HTML", "SCSS", "JavaScript", "Flask"]
+            , "https://github.com/XuLiangQi/me-page");
 
-    <div class="project-card">
-        <p> Project 3</p>
-    </div>
 
-    <div class="project-card">
-        <p> Project 4</p>
-    </div>
+
+        </script>
+    </section>
+
 
 </section>
+
 
 {% endblock %}

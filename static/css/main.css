@@ -193,20 +193,27 @@
   transform: scale(1.02);
 }
 
+.project-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .project-img {
   width: 250px;
+  height: 250px;
   border-radius: 15px;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .project-title {
-  padding-top: 12px;
+  padding-top: 16px;
   font-size: 20px;
   margin: 0;
 }
 
 .project-paragraph {
   font-size: 15px;
+  padding-top: 16px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -216,7 +223,7 @@
   flex-wrap: wrap;
   justify-content: center;
   opacity: 0;
-  margin-top: 70px;
+  margin-top: 50px;
   font-family: "Montserrat";
   animation: fadeIn 1s ease forwards;
 }
