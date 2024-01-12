@@ -42,11 +42,9 @@ function createProjectCard(imageUrl, title, description, skillSet, githubLink) {
     githubLinkElement.href = githubLink;
     githubLinkElement.target = "_blank";
     
-    // Append the GitHub link element to the project container
-    projectContainer.appendChild(githubLinkElement);
-    
     // Append the project card to the GitHub link element
     githubLinkElement.appendChild(projectCard);
 
-    
+    // Append the GitHub link element to the project container
+    projectContainer.appendChild(githubLinkElement);
 }

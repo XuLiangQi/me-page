@@ -69,7 +69,7 @@
 
 .github-menu{
     @extend .logo;
-    position:fixed;
+    position:absolute;
     top: 15px;  
     right:35px;
     height: 40px;
@@ -82,9 +82,7 @@
 }
 
 .footer-container{
-    display:grid;
-    grid-template-columns: auto auto;
-    column-gap: 15px;
+    display:flex;
     width:100vw;
     text-align: right; 
     justify-content: end;
@@ -93,7 +91,9 @@
 }
 .footer-img{
     width:45px;
+    height:45px;
     margin-right:30px;
+    margin-left:10px;
 }
 
 @keyframes fadeIn {

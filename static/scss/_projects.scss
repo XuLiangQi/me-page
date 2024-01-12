@@ -29,13 +29,13 @@
 .project-card{
     background-color:rgb(247, 241, 229);
     border-radius: 20px;;
-    height:500px;
-    width: 350px;
+    height:520px;
+    width: 370px;
     margin:20px;
     text-align: center; 
     transition: transform 0.5s ease; 
     &:hover{
-        transform: scale(1.02);
+        transform: scale(1.01);
     }
 }
 
@@ -64,10 +64,8 @@
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
-    opacity: 0;
     margin-top:50px;
-    font-family: 'Montserrat';
-    animation: fadeIn 1s ease forwards;
+    animation: fadeIn 2.5s ease forwards;
 }
 .project-skill-set{
     background-color:rgb(46, 32, 19);

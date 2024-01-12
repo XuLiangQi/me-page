@@ -1,0 +1,15 @@
+.about-info-container{
+    @extend .project-info-container;
+}
+.about-main-text-container{
+    @extend .project-main-text-container;
+}
+.about-main-title{
+    @extend .project-main-title;
+}
+.about-text{
+    text-align: center; 
+    font-size:$font-s;
+    max-width: 50vw;
+}
+
