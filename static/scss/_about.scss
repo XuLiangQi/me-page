@@ -14,25 +14,34 @@
 }
 
 .about-card-container{
-    @extend .project-card-container;
+    display:flex;
+    flex-wrap: wrap;
+    margin-top:50px;
+    justify-content: center;
+    opacity: 0;
+    font-family: 'Montserrat';
+    animation: fadeIn 1s ease forwards;
 }
 
 .about-card{
-    @extend .project-card;
+    background-color:rgb(247, 241, 229);
+    color:black;
+    border-radius: 20px;;
+    height:520px;
+    width: 370px;
+    margin:20px;
+    text-align: center; 
 }
 
 .about-card-title{
     font-size:$font-m;
     font-weight:bold;
     color:rgb(0, 0, 0);
-    margin-top:15px;
-    align-content: center;
+    margin-top:20px;
 }
 .about-card-sub-title{
-    align-content:center;
-    font-weight:bold;
     font-size:$font-s;
-    margin-top:15px;
+    margin-top:30px;
 }
 .about-card-content{
     align-content:left;

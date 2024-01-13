@@ -45,6 +45,7 @@ jQuery(function () {
       // when creating the element the offset is initialized, however, because of the transition we have to hide it untill it disappears
       setCircle(false);
       setCircle(false);
+      setCircle(false);
   
       // generate a new circle and show path on mouse hover
       marker.mouseover(function () {

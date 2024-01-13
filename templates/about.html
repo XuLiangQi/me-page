@@ -17,11 +17,19 @@
     </div>
 </section>
 
-<section class="about-card-container">
-<div class="about-card">
-    <div class="about-card-title">Education</div>
-    <div class="about-card-sub-title">Dalhousie University</div>
-    <div class="about-card-content">Mechanical Engineering</div>
-</div>
+<script src="../static/js/about-card.js"></script>
+<section id="about-card-container">
+    <script>
+        // Call the createAboutCard function with specific content
+        createAboutCard('Education', [
+            { subTitle: 'McMaster University', contents: ['M.Eng in Systems and Technology', '2020 - 2022'] },
+            { subTitle: 'Dalhousie University', contents: ['B.Eng in Mechanical Engineering', '2016 - 2020'] },
+            { subTitle: 'Courses', contents: ['Machine Learning', 'Deep Learning', 'Multivariate Statistical Methods', 'Applied Probability and Statistics', 'Engineering Economics'] }
+        
+        ]);
+    
+    </script>
+    
+    
 </section>
 {% endblock %}

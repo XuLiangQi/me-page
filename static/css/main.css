@@ -137,19 +137,36 @@
   max-width: 50vw;
 }
 
+.about-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  justify-content: center;
+  opacity: 0;
+  font-family: "Montserrat";
+  animation: fadeIn 1s ease forwards;
+}
+
+.about-card {
+  background-color: rgb(247, 241, 229);
+  color: black;
+  border-radius: 20px;
+  height: 520px;
+  width: 370px;
+  margin: 20px;
+  text-align: center;
+}
+
 .about-card-title {
   font-size: 23px;
   font-weight: bold;
   color: rgb(0, 0, 0);
-  margin-top: 15px;
-  align-content: center;
+  margin-top: 20px;
 }
 
 .about-card-sub-title {
-  align-content: center;
-  font-weight: bold;
   font-size: 18px;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 .about-card-content {
@@ -219,7 +236,7 @@
   font-size: 40px;
 }
 
-.project-card-container, .about-card-container {
+.project-card-container {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
@@ -229,7 +246,7 @@
   animation: fadeIn 1s ease forwards;
 }
 
-.project-card, .about-card {
+.project-card {
   background-color: rgb(247, 241, 229);
   color: black;
   border-radius: 20px;
@@ -239,7 +256,7 @@
   text-align: center;
   transition: transform 0.5s ease;
 }
-.project-card:hover, .about-card:hover {
+.project-card:hover {
   transform: scale(1.01);
 }
 
