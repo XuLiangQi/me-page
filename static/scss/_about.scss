@@ -49,3 +49,29 @@
     align-content:left;
     font-size:$font-xs;
 }
+.about-more-container{
+    margin-top:50px;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+.about-more-title{
+    font-size:$font-l;
+}
+
+.about-more-text{
+    font-size:$font-m;
+    font-weight:bold;
+    color:rgb(189, 146, 27);
+
+    transition: 1s ease;
+
+    &:hover{
+        -webkit-transform: rotateZ(-3deg);
+        -ms-transform: rotateZ(-3deg);
+        transform: rotateZ(-3deg);
+        }
+}
+
+.about-more-link{
+    @extend .project-link;
+}
