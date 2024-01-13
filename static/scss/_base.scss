@@ -53,17 +53,17 @@
 }
 .menu-about{
     @extend .menu-button;
-    right: 320px;
+    right: 340px;
 }
 
 .menu-project{
     @extend .menu-button;
-    right: 200px;
+    right: 220px;
 }
 
 .menu-contact{
     @extend .menu-button;
-    right: 80px;
+    right: 100px;
 }
 
 
@@ -71,7 +71,7 @@
     @extend .logo;
     position:absolute;
     top: 7px;  
-    right:35px;
+    right:40px;
     height: 40px;
     transition: 1s ease;
     &:hover{
