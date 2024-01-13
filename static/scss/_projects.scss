@@ -1,6 +1,7 @@
 .project-info-container{
     margin-top:15vh;
     display: flex;
+    flex-wrap: auto;
     width: auto;
     height: auto; 
     text-align: center; 
@@ -16,7 +17,7 @@
     font-size:$font-xl;
 }
 
-.project-container{
+.project-card-container{
     display:flex;
     flex-wrap: wrap;
     margin-top:50px;
@@ -28,6 +29,7 @@
 
 .project-card{
     background-color:rgb(247, 241, 229);
+    color:black;
     border-radius: 20px;;
     height:520px;
     width: 370px;

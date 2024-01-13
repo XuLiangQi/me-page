@@ -1,6 +1,6 @@
 function createProjectCard(imageUrl, title, description, skillSet, githubLink) {
-    var projectContainer = document.getElementById("project-container");
-    projectContainer.className = "project-container";
+    var projectContainer = document.getElementById("project-card-container");
+    projectContainer.className = "project-card-container";
 
     // Create elements for the new card
     var projectCard = document.createElement("div");

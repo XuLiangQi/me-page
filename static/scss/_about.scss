@@ -13,3 +13,29 @@
     max-width: 50vw;
 }
 
+.about-card-container{
+    @extend .project-card-container;
+}
+
+.about-card{
+    @extend .project-card;
+}
+
+.about-card-title{
+    font-size:$font-m;
+    font-weight:bold;
+    color:rgb(0, 0, 0);
+    margin-top:15px;
+    align-content: center;
+}
+.about-card-sub-title{
+    align-content:center;
+    font-weight:bold;
+    font-size:$font-s;
+    margin-top:15px;
+}
+.about-card-content{
+    align-content:left;
+    font-size:$font-xs;
+    margin-top:15px;
+}
