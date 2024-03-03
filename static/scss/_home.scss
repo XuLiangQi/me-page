@@ -10,19 +10,42 @@
     padding-bottom:100px;
 }
 .info-text-container{
-    margin-top:16vh;
-    margin-right:16vw;
+    margin-top:7vh;
+    margin-left:9vw;
+    margin-right:12vw;
 }
 .home-title{
     margin-top:150px;
     font-size:$font-xl;
 }
 
-.home-paragraph{
+.home-paragraph-large{
     font-size:$font-m;
+}
+.home-paragraph-medium{
+    font-size:$font-s;
 }
 .home-photo{
     position:relative;
-    margin-top:16vh;
+    margin-top:17vh;
+    margin-right:9vw;
     width:400px;
+}
+.home-button-about{
+    background-color:black;
+    border: none;
+    color: white;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 7px;
+    text-decoration: none; 
+    margin-top:5px;
+    padding:7px;
+    line-height:30px;
+    display: inline-block;
+    transition: all 0.5s ease;
+}
+.home-button-about:hover{
+    transform: scale(1.07);
 }
