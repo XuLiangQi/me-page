@@ -1,47 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=1024">
-    <link rel="stylesheet" href="../static/css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1024" />
+    <link rel="stylesheet" href="../static/css/main.css" />
     <title>{% block title %}{% endblock %}</title>
-    <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <nav>
-        <div class="menu-bar-container">
-            <a href="{{ url_for('home') }}" title="back to home">
-                <img src="../static/imgs/logo_c_inverted_no_bg.png" alt="" class="logo">
-            </a>
-    
-            <div class="menu-button-container">
-                <a href="{{ url_for('about') }}" class="menu-button menu-about" target="_self" title="Learn more about me"><b>About</b></a>
-        
-                <a href="{{ url_for('projects') }}" class="menu-button menu-project" target="_self" title="See my projects"><b>Projects</b></a>
-        
-                <a href="{{ url_for('contact') }}" class="menu-button menu-contact" target="_self" title="Connect with me"><b>Contact</b></a>
+      <div class="menu-bar-container">
+        <a href="{{ url_for('home') }}" title="back to home">
+          <img
+            src="../static/imgs/logo_c_inverted_no_bg.png"
+            alt=""
+            class="logo"
+          />
+        </a>
 
-                <a href="https://github.com/XuLiangQi" target="_blank">
-                    <img src="../static/imgs/github-white.png" alt="" class="github-menu">
-                </a>
+        <div class="menu-button-container">
+          <a
+            href="{{ url_for('about') }}"
+            class="menu-button menu-about"
+            target="_self"
+            title="Learn more about me"
+            ><b>About</b></a
+          >
 
-            </div>
-    
+          <a
+            href="{{ url_for('projects') }}"
+            class="menu-button menu-project"
+            target="_self"
+            title="See my projects"
+            ><b>Projects</b></a
+          >
+
+          <a
+            href="{{ url_for('contact') }}"
+            class="menu-button menu-contact"
+            target="_self"
+            title="Connect with me"
+            ><b>Contact</b></a
+          >
+
+          <a href="https://github.com/XuLiangQi" target="_blank">
+            <img
+              src="../static/imgs/github-white.png"
+              alt=""
+              class="github-menu"
+            />
+          </a>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="../static/js/menu-hover.js"></script>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="../static/js/menu-hover.js"></script>
     </nav>
 
-    <section class="main-frame">
-        {% block content %}{% endblock %}
-    </section>
+    <section class="main-frame">{% block content %}{% endblock %}</section>
 
     <section class="bottom-section">
-        <footer class="footer-container">
-            <p>© 2024 XuLiang Qi</p>
-            <img src="../static/imgs/footer-logo-no-bg.png" alt="Image Description" title="''Made by XuLiang Qi''" class="footer-img">
-        </footer>
+      <footer class="footer-container">
+        <p>© 2024 XuLiang Qi</p>
+        <img
+          src="../static/imgs/footer-logo-no-bg.png"
+          alt="Image Description"
+          title="''Made by XuLiang Qi''"
+          class="footer-img"
+        />
+      </footer>
     </section>
-</body>
+  </body>
 </html>

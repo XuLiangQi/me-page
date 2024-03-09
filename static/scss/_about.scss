@@ -1,78 +1,78 @@
-.about-info-container{
-    @extend .project-info-container;
+.about-info-container {
+  @extend .project-info-container;
 }
-.about-main-text-container{
-    @extend .project-main-text-container;
+.about-main-text-container {
+  @extend .project-main-text-container;
 }
-.about-main-title{
-    @extend .project-main-title;
+.about-main-title {
+  @extend .project-main-title;
 }
-.about-text{
-    text-align: center; 
-    font-size:$font-s;
-    max-width: 50vw;
-}
-
-.about-card-container{
-    display:flex;
-    flex-wrap: wrap;
-    margin-top:50px;
-    justify-content: center;
-    opacity: 0;
-    font-family: 'Montserrat';
-    animation: fadeIn 1s ease forwards;
+.about-text {
+  text-align: center;
+  font-size: $font-s;
+  max-width: 50vw;
 }
 
-.about-card{
-    background-color:rgb(247, 241, 229);
-    color:black;
-    border-radius: 20px;;
-    height:550px;
-    width: 370px;
-    margin:20px;
-    text-align: center; 
+.about-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  justify-content: center;
+  opacity: 0;
+  font-family: "Montserrat";
+  animation: fadeIn 1s ease forwards;
 }
 
-.about-card-title{
-    font-size:$font-m;
-    font-weight:bold;
-    color:rgb(22, 9, 0);
-    margin-top:20px;
-    margin-bottom:25px;
-}
-.about-card-sub-title{
-    color:rgb(71, 43, 2);
-    font-size:$font-s;
-    margin-top:20px;
-}
-.about-card-content{
-    align-content:left;
-    font-size:$font-xs;
-}
-.about-more-container{
-    margin-top:50px;
-    text-align: center;
-    font-family: 'Montserrat';
-    padding-bottom:100px;
-}
-.about-more-title{
-    font-size:$font-l;
+.about-card {
+  background-color: rgb(247, 241, 229);
+  color: black;
+  border-radius: 20px;
+  height: 550px;
+  width: 370px;
+  margin: 20px;
+  text-align: center;
 }
 
-.about-more-text{
-    font-size:$font-m;
-    font-weight:bold;
-    color:rgb(189, 146, 27);
-
-    transition: 1s ease;
-
-    &:hover{
-        -webkit-transform: rotateZ(-3deg);
-        -ms-transform: rotateZ(-3deg);
-        transform: rotateZ(-3deg);
-        }
+.about-card-title {
+  font-size: $font-m;
+  font-weight: bold;
+  color: rgb(22, 9, 0);
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+.about-card-sub-title {
+  color: rgb(71, 43, 2);
+  font-size: $font-s;
+  margin-top: 20px;
+}
+.about-card-content {
+  align-content: left;
+  font-size: $font-xs;
+}
+.about-more-container {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Montserrat";
+  padding-bottom: 100px;
+}
+.about-more-title {
+  font-size: $font-l;
 }
 
-.about-more-link{
-    @extend .project-link;
+.about-more-text {
+  font-size: $font-m;
+  font-weight: bold;
+  color: rgb(189, 146, 27);
+
+  transition: 1s ease;
+
+  &:hover {
+    -webkit-transform: rotateZ(-3deg);
+    -ms-transform: rotateZ(-3deg);
+    transform: rotateZ(-3deg);
+  }
+}
+
+.about-more-link {
+  @extend .project-link;
 }

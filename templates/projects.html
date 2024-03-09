@@ -1,50 +1,48 @@
-{% extends "base.html" %}
-
-{% block title %}XuLiang Qi | Projects{% endblock %}
-
+{% extends "base.html" %} {% block title %}XuLiang Qi | Projects{% endblock %}
 {% block content %}
 <!-- Project headers-->
 <section class="project-info-container">
-    <div class="project-main-text-container">
-        <h1 class="project-main-title">My Projects</h1>
-        <h2>Here are some of my personal projects</h2>
-        <h3>Click on each project to check out the source code!</h3>
-    </div>
-
+  <div class="project-main-text-container">
+    <h1 class="project-main-title">My Projects</h1>
+    <h2>Here are some of my personal projects</h2>
+    <h3>Click on each project to check out the source code!</h3>
+  </div>
 </section>
 <!-- Add grid here to show case projects-->
 <section class="project-container">
-    <!--
+  <!--
         projects
     -->
-    
-    <script src="../static/js/project-card.js"></script>
-    <section id="project-card-container">
-        <!-- Projects -->
-        <script>    
-            createProjectCard("../static/imgs/llm-project-img.png"
-            , "Decoder-Only Transformer"
-            , "A large language model that is capable generating text."
-            , ["NLP", "ML/DL", "Python", "Pytorch"]
-            , "https://github.com/XuLiangQi/decoder-only-transformer");
 
-            createProjectCard("../static/imgs/website-img.png"
-            , "Personal Portfolio Website"
-            , "Porfolio website to display personal informaiton and projects."
-            , ["HTML", "SASS", "JavaScript", "Flask"]
-            , "https://github.com/XuLiangQi/me-page");
+  <script src="../static/js/project-card.js"></script>
+  <section id="project-card-container">
+    <!-- Projects -->
+    <script>
+      createProjectCard(
+        "../static/imgs/llm-project-img.png",
+        "Decoder-Only Transformer",
+        "A large language model that is capable generating text.",
+        ["NLP", "ML/DL", "Python", "Pytorch"],
+        "https://github.com/XuLiangQi/decoder-only-transformer"
+      );
 
-            createProjectCard("../static/imgs/motor.png"
-            , "Motor Fault Detection"
-            , "Deep learning model to detect faulty induction motor."
-            , ["DL", "Singal Processing", "Pytorch"]
-            , "https://github.com/XuLiangQi/induction-motor-fault-detection");
+      createProjectCard(
+        "../static/imgs/website-img.png",
+        "Personal Portfolio Website",
+        "Porfolio website to display personal informaiton and projects.",
+        ["HTML", "SASS", "JavaScript", "Flask"],
+        "https://github.com/XuLiangQi/me-page"
+      );
 
-        </script>
-    </section>
-
-
+      createProjectCard(
+        "../static/imgs/motor.png",
+        "Motor Fault Detection",
+        "Deep learning model to detect faulty induction motor.",
+        ["DL", "Singal Processing", "Pytorch"],
+        "https://github.com/XuLiangQi/induction-motor-fault-detection"
+      );
+    </script>
+  </section>
 </section>
-
 
 {% endblock %}

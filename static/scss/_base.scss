@@ -1,119 +1,117 @@
 @import "variables";
 
-.menu-bar-container{
-    position:fixed;
-    height: 75px;
-    top:    10px;
-    left:   10px;;
-    right:  10px;
-    background-color:rgb(0, 0, 0);
-    border-radius: 50px;
-    z-index: 2;
-    font-family: 'Tangerine';
+.menu-bar-container {
+  position: fixed;
+  height: 75px;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50px;
+  z-index: 2;
+  font-family: "Tangerine";
 }
 
-.logo{
-    height:50px;
-    padding-left:20px;
-    padding-top:10px;
-    transition: transform 0.5s ease; 
-    &:hover{
-        transform: scale(1.1);
-    }
+.logo {
+  height: 50px;
+  padding-left: 20px;
+  padding-top: 10px;
+  transition: transform 0.5s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
-.menu-button{
-    color:white;
-    font-size:32px;
-    display:inline-block;
-    position:fixed;
-    top: 30px;  
-    margin: 0 40px;
-    text-decoration: none;
-    //line-height: 1em;
-    & svg {
-      position: absolute;
-      left: 0;
-      top: -50%;
-      right: 0; 
-      margin-left: auto; 
-      margin-right: auto; 
-      pointer-events: none;   
-    }
-    & path {
-        transition: stroke-dashoffset 300ms linear;
-      stroke-width: 2.0;
-      stroke: white;
-      fill: none;
-      stroke-linecap: round;
-    }
-    &:hover path{
-      stroke-dashoffset: 0;
-    } 
+.menu-button {
+  color: white;
+  font-size: 32px;
+  display: inline-block;
+  position: fixed;
+  top: 30px;
+  margin: 0 40px;
+  text-decoration: none;
+  //line-height: 1em;
+  & svg {
+    position: absolute;
+    left: 0;
+    top: -50%;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    pointer-events: none;
+  }
+  & path {
+    transition: stroke-dashoffset 300ms linear;
+    stroke-width: 2;
+    stroke: white;
+    fill: none;
+    stroke-linecap: round;
+  }
+  &:hover path {
+    stroke-dashoffset: 0;
+  }
 }
-.menu-about{
-    @extend .menu-button;
-    right: 340px;
-}
-
-.menu-project{
-    @extend .menu-button;
-    right: 220px;
+.menu-about {
+  @extend .menu-button;
+  right: 340px;
 }
 
-.menu-contact{
-    @extend .menu-button;
-    right: 100px;
+.menu-project {
+  @extend .menu-button;
+  right: 220px;
 }
 
+.menu-contact {
+  @extend .menu-button;
+  right: 100px;
+}
 
-.github-menu{
-    @extend .logo;
-    position:absolute;
-    top: 7px;  
-    right:40px;
-    height: 40px;
-    transition: 1s ease;
-    &:hover{
-        -webkit-transform: rotateZ(-15deg);
-        -ms-transform: rotateZ(-15deg);
-        transform: rotateZ(-15deg);
-        }
+.github-menu {
+  @extend .logo;
+  position: absolute;
+  top: 7px;
+  right: 40px;
+  height: 40px;
+  transition: 1s ease;
+  &:hover {
+    -webkit-transform: rotateZ(-15deg);
+    -ms-transform: rotateZ(-15deg);
+    transform: rotateZ(-15deg);
+  }
 }
 
 @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  from {
+    opacity: 0;
   }
-
-  .main-frame{
-    background-color:rgb(223, 215, 205);
-    margin-top:130px;
-    margin-left:10px;
-    margin-right:10px;
-    border-radius:30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.527);
-    min-height:1080px;;
+  to {
+    opacity: 1;
   }
-  .bottom-section{
-    padding-top:20px;
-  }
+}
 
+.main-frame {
+  background-color: rgb(223, 215, 205);
+  margin-top: 130px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.527);
+  min-height: 1080px;
+}
+.bottom-section {
+  padding-top: 20px;
+}
 
-.footer-container{
-  display:flex;
-  width:100vw;
-  text-align: right; 
+.footer-container {
+  display: flex;
+  width: 100vw;
+  text-align: right;
   justify-content: end;
   bottom: 0;
 }
-.footer-img{
-  width:45px;
-  height:45px;
-  margin-right:30px;
-  margin-left:10px;
+.footer-img {
+  width: 45px;
+  height: 45px;
+  margin-right: 30px;
+  margin-left: 10px;
 }

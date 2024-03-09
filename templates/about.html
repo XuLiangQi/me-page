@@ -1,50 +1,92 @@
-{% extends "base.html" %}
-
-{% block title %}XuLiang Qi | About{% endblock %}
-
-
-{% block content %}
+{% extends "base.html" %} {% block title %}XuLiang Qi | About{% endblock %} {%
+block content %}
 <section class="about-info-container">
-    <div class="about-main-text-container">
-        <h2 class="about-main-title">About Me</h2>
-        <p class="about-text">I am passionate about developing 
-            and deploying machine learning applications to 
-            address real-world issues. By integrating techniques 
-            from software development, my aim is 
-            to create powerful yet efficient solutions that 
-            helps someone, somewhere.
-        </p>
-    </div>
+  <div class="about-main-text-container">
+    <h2 class="about-main-title">About Me</h2>
+    <p class="about-text">
+      I am passionate about developing and deploying machine learning
+      applications to address real-world issues. By integrating techniques from
+      software development, my aim is to create powerful yet efficient solutions
+      that helps someone, somewhere.
+    </p>
+  </div>
 </section>
 
 <script src="../static/js/about-card.js"></script>
 <section id="about-card-container">
-    <script>
-        // Call the createAboutCard function with specific content
-        createAboutCard('Education', [
-            { subTitle: 'McMaster University', contents: ['M.Eng in Systems and Technology', '2020 - 2022'] },
-            { subTitle: 'Dalhousie University', contents: ['B.Eng in Mechanical Engineering', '2016 - 2020'] },
-            { subTitle: 'Courses', contents: ['Machine Learning', 'Deep Learning', 'Multivariate Statistical Methods'
-            , 'Applied Probability and Statistics', 'Engineering Economics'] }
-        
-        ]);
+  <script>
+    // Call the createAboutCard function with specific content
+    createAboutCard("Education", [
+      {
+        subTitle: "McMaster University",
+        contents: ["M.Eng in Systems and Technology", "2020 - 2022"],
+      },
+      {
+        subTitle: "Dalhousie University",
+        contents: ["B.Eng in Mechanical Engineering", "2016 - 2020"],
+      },
+      {
+        subTitle: "Courses",
+        contents: [
+          "Machine Learning",
+          "Deep Learning",
+          "Multivariate Statistical Methods",
+          "Applied Probability and Statistics",
+          "Engineering Economics",
+        ],
+      },
+    ]);
 
-        createAboutCard('Software Development', [
-            { subTitle: 'Languages', contents: ['C++', 'Python', 'C', 'MATLAB', 'HTML', 'CSS/SASS', 'JavaScript'
-            , 'SQL', 'Swift'] },
-            { subTitle: 'Software/Tools', contents: ['Azure DevOps', 'Git', 'Oracle SQL'] }
-        ]);
+    createAboutCard("Software Development", [
+      {
+        subTitle: "Languages",
+        contents: [
+          "C++",
+          "Python",
+          "C",
+          "MATLAB",
+          "HTML",
+          "CSS/SASS",
+          "JavaScript",
+          "SQL",
+          "Swift",
+        ],
+      },
+      {
+        subTitle: "Software/Tools",
+        contents: ["Azure DevOps", "Git", "Oracle SQL"],
+      },
+    ]);
 
-        createAboutCard('Machine Learning', [
-            { subTitle: 'Areas', contents: ['Natural Language Processing (NLP)', 'Computer Vision'
-            , 'Time Series Forecasting', 'Model Deployment'] },
-            { subTitle: 'Libraries', contents: ['PyTorch', 'Keras', 'Scikit-learn', 'Numpy', 'Pandas', 'OpenAI'] }
-        ]);
-    </script>
+    createAboutCard("Machine Learning", [
+      {
+        subTitle: "Areas",
+        contents: [
+          "Natural Language Processing (NLP)",
+          "Computer Vision",
+          "Time Series Forecasting",
+          "Model Deployment",
+        ],
+      },
+      {
+        subTitle: "Libraries",
+        contents: [
+          "PyTorch",
+          "Keras",
+          "Scikit-learn",
+          "Numpy",
+          "Pandas",
+          "OpenAI",
+        ],
+      },
+    ]);
+  </script>
 </section>
 
 <section class="about-more-container">
-    <h1 class="about-more-title">Curious to know more ?</h1>
-    <a href="{{ url_for('contact') }}" class="about-more-link"><p class="about-more-text"> Let's have a chat!</p></a>
+  <h1 class="about-more-title">Curious to know more ?</h1>
+  <a href="{{ url_for('contact') }}" class="about-more-link"
+    ><p class="about-more-text">Let's have a chat!</p></a
+  >
 </section>
 {% endblock %}

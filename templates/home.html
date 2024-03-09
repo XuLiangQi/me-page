@@ -1,15 +1,17 @@
-{% extends "base.html" %}
-
-{% block title %}XuLiang Qi | Software Developer | Machine Learning Engineer{% endblock %}
-
-{% block content %}
+{% extends "base.html" %} {% block title %}XuLiang Qi | Software Developer |
+Machine Learning Engineer{% endblock %} {% block content %}
 <section class="info-container">
-    <div class="info-text-container">
-        <h1 class="home-title">XuLiang Qi</h1>
-        <p class="home-paragraph-large">Software Developer & Machine Learning Engineer</p>
-        <p class="home-paragraph-medium">I specialize in software design, development, and optimization, dedicated to fostering organizational growth and innovation.</p>
-        <a href="{{ url_for('about') }}" class="home-button-about">About Me</a>
-    </div>
-    <img src="../static/imgs/me-brick-wall.jpeg" alt="" class="home-photo">
+  <div class="info-text-container">
+    <h1 class="home-title">XuLiang Qi</h1>
+    <p class="home-paragraph-large">
+      Software Developer & Machine Learning Engineer
+    </p>
+    <p class="home-paragraph-medium">
+      I specialize in software design, development, and optimization, dedicated
+      to fostering organizational growth and innovation.
+    </p>
+    <a href="{{ url_for('about') }}" class="home-button-about">About Me</a>
+  </div>
+  <img src="../static/imgs/me-brick-wall.jpeg" alt="" class="home-photo" />
 </section>
 {% endblock %}
